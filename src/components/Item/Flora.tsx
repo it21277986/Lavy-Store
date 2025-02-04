@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
@@ -12,28 +14,28 @@ const products = [
     description: "Elegant black bouquet with fresh roses."
   },
   {
-    id: 1,
+    id: 2,
     name: "Pretty Black Bouquet",
     price: "1000.00",
     images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
     description: "Elegant black bouquet with fresh roses."
   },
   {
-    id: 1,
+    id: 3,
     name: "Pretty Black Bouquet",
     price: "1000.00",
     images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
     description: "Elegant black bouquet with fresh roses."
   },
   {
-    id: 1,
+    id: 4,
     name: "Pretty Black Bouquet",
     price: "1000.00",
     images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
     description: "Elegant black bouquet with fresh roses."
   },
   {
-    id: 1,
+    id: 5,
     name: "Pretty Black Bouquet",
     price: "1000.00",
     images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
