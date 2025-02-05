@@ -59,8 +59,8 @@ const Header = () => {
       >
           <ul className="container flex flex-col items-left gap-4 text-lg">
             <li className="cursor-pointer hover:font-bold transition" onClick={() => document.getElementById("Hero")?.scrollIntoView({ behavior: "smooth" })}>Home</li>
-            <li className="cursor-pointer hover:font-bold transition">About Us</li>
-            <li className="cursor-pointer hover:font-bold transition">Contact Us</li>
+            <li className="cursor-pointer hover:font-bold transition" onClick={() => document.getElementById("About")?.scrollIntoView({ behavior: "smooth" })}>About Us</li>
+            <li className="cursor-pointer hover:font-bold transition" onClick={() => document.getElementById("Footer")?.scrollIntoView({ behavior: "smooth" })}>Contact Us</li>
           </ul>
         </div>
       )}
