@@ -35,8 +35,8 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-10">
           <ul className="flex gap-10 text-lg">
             <li className="cursor-pointer hover:font-bold transition" onClick={() => document.getElementById("Hero")?.scrollIntoView({ behavior: "smooth" })}>Home</li>
-            <li className="cursor-pointer hover:font-bold transition">About Us</li>
-            <li className="cursor-pointer hover:font-bold transition">Contact Us</li>
+            <li className="cursor-pointer hover:font-bold transition" onClick={() => document.getElementById("About")?.scrollIntoView({ behavior: "smooth" })}>About Us</li>
+            <li className="cursor-pointer hover:font-bold transition" onClick={() => document.getElementById("Footer")?.scrollIntoView({ behavior: "smooth" })}>Contact Us</li>
           </ul>
         </div>
 
@@ -52,9 +52,13 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white py-4 shadow-md">
-          <ul className="flex flex-col items-center gap-4 text-lg">
-            <li className="cursor-pointer hover:font-bold transition">Home</li>
+        <div
+        className={`lg:hidden py-4 shadow-md transition-colors duration-300 ${
+          isScrolled ? "bg-[#303030] text-white" : "bg-white text-black"
+        }`}
+      >
+          <ul className="container flex flex-col items-left gap-4 text-lg">
+            <li className="cursor-pointer hover:font-bold transition" onClick={() => document.getElementById("Hero")?.scrollIntoView({ behavior: "smooth" })}>Home</li>
             <li className="cursor-pointer hover:font-bold transition">About Us</li>
             <li className="cursor-pointer hover:font-bold transition">Contact Us</li>
           </ul>
