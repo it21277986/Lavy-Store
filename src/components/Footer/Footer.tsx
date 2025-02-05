@@ -18,7 +18,7 @@ function Footer() {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           {/* Left Section (Logo & Social Media) */}
           <div className="flex flex-col items-center md:items-start">
-            <a href="/"><img src="/static/headerlogo.svg" alt="Logo" className="w-20 sm:w-28" /></a>
+            <img src="/static/headerlogo.svg" alt="Logo" className="w-20 sm:w-28" />
             <h1 className="text-lg font-semibold mt-2">Lavy Store</h1>
 
             {/* Social Media Icons */}
@@ -53,7 +53,7 @@ function Footer() {
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[#858585]">
           <h1 className="text-center md:text-left">
-            © 2025 Lavy Store - All rights reserved. | Designed by <a href="https://lakmal-thathsara-portfolio.netlify.app/"><u>Lakmal Thathsara</u></a>
+            © {new Date().getFullYear()} Lavy Store - All rights reserved. | Designed by <a href="https://lakmal-thathsara-portfolio.netlify.app/"><u>Lakmal Thathsara</u></a>
           </h1>
           <div className="flex gap-4 mt-2 md:mt-0">
             <a href="#" className="hover:text-white">Privacy Policy</a>
