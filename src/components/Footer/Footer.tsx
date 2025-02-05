@@ -1,45 +1,68 @@
 "use client";
 
-import React from 'react'
-import { FaPhone } from "react-icons/fa6";
+import React from "react";
+import { FaPhone, FaWhatsapp, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
 
 function Footer() {
-    return (
-        <div id='Footer'>
-            <div className='mx-auto text-center mt-10 mb-5 ml-5 mr-5 bg-[#303030] text-white rounded-[10px]'>
-                <div className='container'>
-                    <div className='p-10'>
-                        <h1 className='font-bold text-lg' style={{ letterSpacing: '7px' }}>CONTACT US</h1>
-                    </div>
-                    <div className='mx-auto pb-10 flex justify-between items-center'>
-                        <div>
-                            <div className="flex items-center">
-                                <img src="/static/headerlogo.svg" alt="Logo" className="w-24 sm:w-32" />
-                            </div>
-                            <h1>Lavy Store</h1>
-                            <div className='pt-5 flex gap-5 text-[#858585] text-xl'>
-                                <h1 className='cursor-pointer'><FaWhatsapp/></h1>
-                                <h1 className='cursor-pointer'><FaFacebook/></h1>
-                                <h1 className='cursor-pointer'><FaInstagram/></h1>
-                                <h1 className='cursor-pointer'><FaTiktok/></h1>
-                            </div>
-                        </div>
-                        <div className="hidden lg:flex flex-col items-start gap-2 text-[#858585] text-lg">
-                            <a href='tel:+94728636129'><h1 className="cursor-pointer flex items-center gap-2"><FaPhone />(+94) 72 863 6129</h1></a>
-                            <a href='#'><h1 className="cursor-pointer flex items-center gap-2"><MdEmail />lavystore@gmail.com</h1></a>
-                            <h1 className="cursor-pointer flex items-center gap-2"><FaLocationDot />Kurunegala, Sri Lanka</h1>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div id="Footer" className="mt-10 p-5">
+      <div className="mx-auto text-center bg-[#303030] text-white rounded-[10px] p-5 sm:p-10">
+        {/* Contact Us Heading */}
+        <h1 className="font-bold text-lg tracking-[5px] sm:tracking-[7px] pb-5">
+          CONTACT US
+        </h1>
+
+        {/* Main Content */}
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          {/* Left Section (Logo & Social Media) */}
+          <div className="flex flex-col items-center md:items-start">
+            <img src="/static/headerlogo.svg" alt="Logo" className="w-20 sm:w-28" />
+            <h1 className="text-lg font-semibold mt-2">Lavy Store</h1>
+
+            {/* Social Media Icons */}
+            <div className="flex gap-4 text-[#858585] text-2xl pt-3">
+              <a href="#" className="hover:text-white"><FaWhatsapp /></a>
+              <a href="#" className="hover:text-white"><FaFacebook /></a>
+              <a href="#" className="hover:text-white"><FaInstagram /></a>
+              <a href="#" className="hover:text-white"><FaTiktok /></a>
             </div>
+          </div>
+
+          {/* Right Section (Contact Info) */}
+          <div className="flex flex-col items-center md:items-start text-[#858585] text-lg">
+            <a href="tel:+94728636129" className="flex items-center gap-2 text-white hover:text-[#858585] transition">
+              <FaPhone className="text-[#858585]" />
+              (+94) 72 863 6129
+            </a>
+            <a href="#" className="flex items-center gap-2 text-white hover:text-[#858585] transition">
+              <MdEmail className="text-[#858585]" />
+              lavystore@gmail.com
+            </a>
+            <a href="#" className="flex items-center gap-2 text-white hover:text-[#858585] transition">
+              <FaLocationDot className="text-[#858585]" />
+              Kurunegala, Sri Lanka
+            </a>
+          </div>
         </div>
-    )
+
+        {/* Divider */}
+        <hr className="border-[#858585] my-5" />
+
+        {/* Footer Bottom */}
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[#858585]">
+          <h1 className="text-center md:text-left">
+            © 2025 Lavy Store - All rights reserved. | Designed by Lakmal Thathsara
+          </h1>
+          <div className="flex gap-4 mt-2 md:mt-0">
+            <a href="#" className="hover:text-white">Privacy Policy</a>
+            <a href="#" className="hover:text-white">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
