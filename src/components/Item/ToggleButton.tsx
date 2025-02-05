@@ -15,7 +15,7 @@ function ToggleButton() {
   const [isOption1, setIsOption1] = useState(true);
 
   return (
-    <div className="container mx-auto text-center mt-10">
+    <div id="Shop" className="container mx-auto text-center mt-10">
         <div className="pb-10">
             <p>
             Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful 
