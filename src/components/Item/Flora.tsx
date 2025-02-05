@@ -65,10 +65,14 @@ function Flora() {
 
   return (
     <div className="container mx-auto text-center mt-10 mb-10">
-      <h1 className="text-3xl font-bold mb-6">Floral Collection</h1>
-
+      {/* <div className="pb-10">
+        <p>
+          Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful
+          content. Lorem ipsum may be used as a placeholder before the final copy is available and is commonly used in graphic design. Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.
+        </p>
+      </div> */}
       {/* Product Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.id}
@@ -87,7 +91,6 @@ function Flora() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 p-4">
           <div className="bg-white p-2 rounded-xl shadow-xl relative
       w-[90%] sm:w-[75%] lg:w-[60%] max-w-4xl h-auto">
-
             <a href="http://wa.me/94728636129" target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-black-600 text-5xl hover:text-green-600">
               <FaWhatsapp />
             </a>
@@ -104,12 +107,12 @@ function Flora() {
               </button>
 
               {/* Close Button */}
-            <button
-              className="absolute top-2 right-4 text-gray-600 text-4xl hover:text-red-500"
-              onClick={() => setSelectedProduct(null)}
-            >
-              &times;
-            </button>
+              <button
+                className="absolute top-2 right-4 text-gray-600 text-4xl hover:text-red-500"
+                onClick={() => setSelectedProduct(null)}
+              >
+                &times;
+              </button>
 
               <img
                 src={selectedProduct.images[currentImageIndex]}
