@@ -18,9 +18,9 @@ function ToggleButton() {
     <div id="Shop" className="container mx-auto text-center mt-10">
         <div className="pb-10">
             <p>
-            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful 
-            content. Lorem ipsum may be used as a placeholder before the final copy is available and is commonly used in graphic design. Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful 
-            content. Lorem ipsum may be used as a placeholder before the final copy is available and is commonly used in graphic design.
+            At Lavy Store, we believe that every gift should be a reflection of elegance and charm. Our handcrafted ribbon rose bouquets and thoughtfully 
+            curated gift item boxes are designed to bring a touch of luxury to your special moments. Whether celebrating love, friendship, or milestones, 
+            we create gifts that illuminate beauty and leave a lasting impression.
             </p>
         </div>
       {/* Toggle Buttons Container */}

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaPhone, FaWhatsapp, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -32,8 +32,8 @@ function Footer() {
 
           {/* Right Section (Contact Info) */}
           <div className="flex flex-col items-center md:items-start text-[#858585] text-lg">
-            <a href="tel:+94728636129" className="flex items-center gap-2 text-white hover:text-[#858585] transition">
-              <FaPhone className="text-[#858585]" />
+            <a href="http://wa.me/94728636129" className="flex items-center gap-2 text-white hover:text-[#858585] transition">
+              <FaWhatsapp className="text-[#858585]" />
               (+94) 72 863 6129
             </a>
             <a href="#" className="flex items-center gap-2 text-white hover:text-[#858585] transition">

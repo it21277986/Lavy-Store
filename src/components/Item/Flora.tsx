@@ -8,10 +8,10 @@ import { FaWhatsapp } from "react-icons/fa";
 const products = [
   {
     id: 1,
-    name: "Pretty Black Bouquet",
-    price: "1000.00",
+    name: "Elysian Bloom",
+    price: "300.00",
     images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
-    description: "Elegant black bouquet with fresh roses."
+    description: "A simple yet graceful touch of love."
   },
   {
     id: 2,
@@ -67,8 +67,9 @@ function Flora() {
     <div className="container mx-auto text-center mt-10 mb-10">
       {/* <div className="pb-10">
         <p>
-          Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful
-          content. Lorem ipsum may be used as a placeholder before the final copy is available and is commonly used in graphic design. Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.
+          At Lavy Store, we believe that every gift should be a reflection of elegance and charm. Our handcrafted ribbon rose bouquets and thoughtfully 
+          curated gift item boxes are designed to bring a touch of luxury to your special moments. Whether celebrating love, friendship, or milestones, 
+          we create gifts that illuminate beauty and leave a lasting impression.
         </p>
       </div> */}
       {/* Product Grid */}
@@ -91,7 +92,10 @@ function Flora() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 p-4">
           <div className="bg-white p-2 rounded-xl shadow-xl relative
       w-[90%] sm:w-[75%] lg:w-[60%] max-w-4xl h-auto">
-            <a href="http://wa.me/94728636129" target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-black-600 text-5xl hover:text-green-600">
+            <a href={`https://wa.me/94728636129?text=Hello%20Lavy%20Store,%20I'm%20interested%20in%20the%20${encodeURIComponent(selectedProduct.name)}.%20Price:%20Rs.${selectedProduct.price}.%20${encodeURIComponent(selectedProduct.description)}%20Check%20the%20image:%20${encodeURIComponent(window.location.origin + selectedProduct.images[0])}`}
+            target="_blank" rel="noopener noreferrer" 
+            className="absolute bottom-4 right-4 text-black-600 text-4xl hover:text-green-600"
+            >
               <FaWhatsapp />
             </a>
 
