@@ -40,7 +40,7 @@ function Footer() {
               <MdEmail className="text-[#858585]" />
               lavystore@gmail.com
             </a>
-            <a href="#" className="flex items-center gap-2 text-white hover:text-[#858585] transition">
+            <a className="flex items-center gap-2 text-white hover:text-[#858585] transition">
               <FaLocationDot className="text-[#858585]" />
               Kurunegala, Sri Lanka
             </a>

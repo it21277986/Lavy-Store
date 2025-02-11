@@ -3,20 +3,25 @@ import React from "react";
 
 function About() {
   return (
-    <div id='About' className='container mx-auto text-center mt-10 mb-10'>
-      <div>
-        <h1 className='font-bold text-lg' style={{ letterSpacing: '7px' }}>ABOUT US</h1>
-      </div>
-      <div className="flex flex-col md:flex-row items-center justify-between pt-10">
-        <div className="md:w-1/2">
-          <p className='text-left'>
-            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used
-            as a placeholder before the final copy is available Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without
-            relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. Lorem ipsum may be used as a placeholder before the final
-            copy is available Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-            Lorem ipsum may be used as a placeholder before the final copy is available
+    <div id="About" className="container mx-auto text-center px-5 mt-10 mb-10">
+      {/* ABOUT US Heading */}
+      <h1 className="font-bold text-lg tracking-[5px] sm:tracking-[7px]">ABOUT US</h1>
+
+      {/* First Section: About Text + Image */}
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between pt-10 gap-8">
+        {/* Left Section: Text Content */}
+        <div className="md:w-1/2 text-left">
+          <p className="text-gray-700 leading-relaxed">
+            At Lavy Store, we specialize in crafting elegant and handcrafted ribbon rose bouquets that capture the essence of beauty and love. Each bouquet is
+            carefully designed to bring joy to special moments, making them perfect for gifts, décor, and celebrations.
           </p>
-          <div className="text-left pt-5">
+          <p className="text-gray-700 leading-relaxed">
+            As we continue to grow, we are excited to expand our collection with exquisite gift item boxes and floral bouquets, thoughtfully curated to
+            create meaningful and unforgettable experiences. Whether you’re celebrating a birthday, anniversary, or any special occasion, Lavy Store is
+            here to add a touch of charm and elegance to your gifts.
+          </p>
+          {/* SHOP NOW Button */}
+          <div className="pt-5">
             <button
               className="border border-black bg-black text-white py-2 px-6 rounded-full text-lg hover:bg-white hover:text-black transition"
               onClick={() => document.getElementById("Shop")?.scrollIntoView({ behavior: "smooth" })}
@@ -25,27 +30,31 @@ function About() {
             </button>
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-end pt-5">
-          <img src="/static/aboutus.jpg" alt="About us" style={{ width: '400px', height: '500px' }} className="rounded-[10px]" />
+
+        {/* Right Section: Image */}
+        <div className="md:w-1/2 flex justify-center">
+          <img src="/static/aboutus.jpg" alt="About us" className="w-[90%] sm:w-[400px] h-auto rounded-lg shadow-md" />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between pt-10">
+
+      {/* Second Section: Founder Info */}
+      <div className="flex flex-col md:flex-row items-center justify-between pt-10 gap-8">
+        {/* Left Section: Image */}
         <div className="md:w-1/2 flex justify-center">
-          <img src="/static/hansi.jpg" alt="About us" style={{ width: '300px', height: 'auto' }} className="rounded-full" />
+          <img src="/static/hansi.jpg" alt="Hansini Abekoon" className="w-[60%] sm:w-[300px] h-auto rounded-full shadow-md" />
         </div>
-        <div className="md:w-1/2">
-          <h1 className='text-right font-bold text-lg pb-2'>Hansini Abekoon</h1>
-          <p className='text-right'>
-            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used
-            as a placeholder before the final copy is available Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without
-            relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. Lorem ipsum may be used as a placeholder before the final
-            copy is available Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-            Lorem ipsum may be used as a placeholder before the final copy is available
+
+        {/* Right Section: Text Content */}
+        <div className="md:w-1/2 text-right">
+          <h1 className="font-bold text-lg pb-2">Hansini Abekoon</h1>
+          <p className="text-gray-700 leading-relaxed">
+            Hi, I’m Hansini Abekoon, the owner of Lavy Store! I’ve always had a passion for creativity and making beautiful things, which led me to start this journey of crafting elegant ribbon rose bouquets. Each piece I create is made with love and care, perfect for bringing joy to special moments.
+            As I grow Lavy Store, I’m excited to expand into gift item boxes and bouquets, offering more unique and heartfelt gifts for you and your loved ones. My goal is to make every gift feel special and meaningful. Thank you for supporting my small business—I can’t wait to share more beautiful creations with you!
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
