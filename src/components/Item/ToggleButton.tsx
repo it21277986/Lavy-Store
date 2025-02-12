@@ -8,7 +8,7 @@ const Option1 = () => (
 );
 
 const Option2 = () => (
-  <div className="p-6 text-center text-lg text-green-800">This is Option 2</div>
+  <div className="p-6 text-center text-lg text-green-800">Gift Box</div>
 );
 
 function ToggleButton() {
@@ -49,7 +49,7 @@ function ToggleButton() {
           }`}
           onClick={() => setIsOption1(false)}
         >
-          OPTION
+          GIFT BOX
         </button>
       </div>
 

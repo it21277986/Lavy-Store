@@ -16,7 +16,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lavy Store",
   description: "Lavy Flora Store",
+  icons: {
+    icon: "/static/headerlogo.svg",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png", // For Apple devices
+  },
 };
+
 
 export default function RootLayout({
   children,

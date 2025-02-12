@@ -10,37 +10,40 @@ const products = [
     id: 1,
     name: "Elysian Bloom",
     price: "300.00",
-    images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
+    images: ["/static/pkg1/red1.jpeg", "/static/pkg1/white1.jpeg", "/static/pkg1/black1.jpeg"],
+    no: "1 Rose Bouquet",
     description: "A simple yet graceful touch of love."
   },
   {
     id: 2,
-    name: "Pretty Black Bouquet",
-    price: "1000.00",
-    images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
-    description: "Elegant black bouquet with fresh roses."
+    name: "Trinity Charm",
+    price: "900.00",
+    images: ["/static/pkg2/black3.jpeg"],
+    no: "3 Rose Bouquet",
+    description: "Symbolizing love, friendship, and joy."
   },
   {
     id: 3,
-    name: "Pretty Black Bouquet",
-    price: "1000.00",
-    images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
-    description: "Elegant black bouquet with fresh roses."
+    name: "Serene Elegance",
+    price: "1800.00",
+    images: ["/static/pkg3/rose7.1.jpeg", "/static/pkg3/rose7.2.jpeg", "/static/pkg3/rose7.3.jpeg"],
+    description: "A bouquet of balance and beauty."
   },
   {
     id: 4,
     name: "Pretty Black Bouquet",
-    price: "1000.00",
-    images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
+    price: "1900.00",
+    images: ["/static/pkg4/black7.2.jpeg", "/static/pkg4/black7.1.jpeg", "/static/pkg4/black7.3.jpeg"],
     description: "Elegant black bouquet with fresh roses."
   },
-  {
-    id: 5,
-    name: "Pretty Black Bouquet",
-    price: "1000.00",
-    images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
-    description: "Elegant black bouquet with fresh roses."
-  },
+  // {
+  //   id: 5,
+  //   name: "Pretty Black Bouquet",
+  //   price: "1000.00",
+  //   images: ["/static/flw1.jpeg", "/static/flw2.jpeg", "/static/flw3.jpeg"],
+  //   description: "Elegant black bouquet with fresh roses."
+  // },
+  
 ];
 
 function Flora() {
@@ -64,20 +67,20 @@ function Flora() {
   };
 
   return (
-    <div className="container mx-auto text-center mt-10 mb-10">
-      {/* <div className="pb-10">
+    <div id="Shop" className="container mx-auto text-center mt-20 mb-10">
+      <div className="pb-20">
         <p>
           At Lavy Store, we believe that every gift should be a reflection of elegance and charm. Our handcrafted ribbon rose bouquets and thoughtfully 
           curated gift item boxes are designed to bring a touch of luxury to your special moments. Whether celebrating love, friendship, or milestones, 
           we create gifts that illuminate beauty and leave a lasting impression.
         </p>
-      </div> */}
+      </div>
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.id}
-            className="rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition duration-300"
+            className="rounded-md  cursor-pointer hover:shadow-xl transition duration-300"
             onClick={() => { setSelectedProduct(product); setCurrentImageIndex(0); }}
           >
             <img src={product.images[0]} alt={product.name} className="w-full h-60 object-cover rounded-lg" />
@@ -91,10 +94,10 @@ function Flora() {
       {selectedProduct && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 p-4">
           <div className="bg-white p-2 rounded-xl shadow-xl relative
-      w-[90%] sm:w-[75%] lg:w-[60%] max-w-4xl h-auto">
-            <a href={`https://wa.me/94728636129?text=Hello%20Lavy%20Store,%20I'm%20interested%20in%20the%20${encodeURIComponent(selectedProduct.name)}.%20Price:%20Rs.${selectedProduct.price}.%20${encodeURIComponent(selectedProduct.description)}%20Check%20the%20image:%20${encodeURIComponent(window.location.origin + selectedProduct.images[0])}`}
-            target="_blank" rel="noopener noreferrer" 
-            className="absolute bottom-4 right-4 text-black-600 text-4xl hover:text-green-600"
+              w-[90%] sm:w-[75%] lg:w-[60%] max-w-4xl h-auto">
+            <a href={`https://wa.me/94728636129?text=Hello%20Lavy%20Store,%20I'm%20interested%20in%20the%20${encodeURIComponent(selectedProduct.name)}.%20Price:%20Rs.${selectedProduct.price}.%20${encodeURIComponent(selectedProduct.description)}`}
+              target="_blank" rel="noopener noreferrer"
+              className="absolute bottom-4 right-4 text-black-600 text-4xl hover:text-green-600"
             >
               <FaWhatsapp />
             </a>
@@ -121,7 +124,7 @@ function Flora() {
               <img
                 src={selectedProduct.images[currentImageIndex]}
                 alt={selectedProduct.name}
-                className="w-full object-cover rounded-lg 
+                className="w-full object-cover rounded-lg
                     h-[250px] sm:h-[350px] lg:h-[450px]"
               />
 
@@ -138,8 +141,9 @@ function Flora() {
             {/* Product Details */}
             <div className="mt-4 text-center">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">{selectedProduct.name}</h2>
+              <p className="text-gray-500 mt-1 text-sm sm:text-base">{selectedProduct.no}</p>
               <p className="text-gray-700 mt-2 text-sm sm:text-base">{selectedProduct.description}</p>
-              <p className="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 text-green-600">
+              <p className="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 text-gray-600">
                 Rs. {selectedProduct.price}
               </p>
             </div>
