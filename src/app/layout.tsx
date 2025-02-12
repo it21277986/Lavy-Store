@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Lavy Flora Store",
   icons: {
     icon: "/static/headerlogo.svg",
-    shortcut: "/favicon.ico",
+    shortcut: "/static/headerlogo.svg",
     apple: "/apple-touch-icon.png", // For Apple devices
   },
 };
