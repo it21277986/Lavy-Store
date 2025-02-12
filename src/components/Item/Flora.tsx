@@ -80,10 +80,10 @@ function Flora() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="rounded-md  cursor-pointer hover:shadow-xl transition duration-300"
+            className="rounded-md cursor-pointer"
             onClick={() => { setSelectedProduct(product); setCurrentImageIndex(0); }}
           >
-            <img src={product.images[0]} alt={product.name} className="w-full h-60 object-cover rounded-lg" />
+            <img src={product.images[0]} alt={product.name} className="w-full h-80 object-cover rounded-lg" />
             <h2 className="mt-2 font-semibold text-lg">{product.name}</h2>
             <p className="text-gray-600">Rs. {product.price}</p>
           </div>
@@ -95,7 +95,7 @@ function Flora() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 p-4">
           <div className="bg-white p-2 rounded-xl shadow-xl relative
               w-[90%] sm:w-[75%] lg:w-[60%] max-w-4xl h-auto">
-            <a href={`https://wa.me/94728636129?text=Hello%20Lavy%20Store,%20I'm%20interested%20in%20the%20${encodeURIComponent(selectedProduct.name)}.%20Price:%20Rs.${selectedProduct.price}.%20${encodeURIComponent(selectedProduct.description)}`}
+            <a href={`https://wa.me/94728636129?text=Hello%20Lavy%20Store,%20I'm%20interested%20in%20the%20${encodeURIComponent(selectedProduct.name)}.%20Price:%20Rs.${selectedProduct.price}.%20Website:%20https://lavystore.netlify.app/`}
               target="_blank" rel="noopener noreferrer"
               className="absolute bottom-4 right-4 text-black-600 text-4xl hover:text-green-600"
             >
