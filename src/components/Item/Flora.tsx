@@ -27,6 +27,7 @@ const products = [
     name: "Serene Elegance",
     price: "1800.00",
     images: ["/static/pkg3/rose7.1.jpeg", "/static/pkg3/rose7.2.jpeg", "/static/pkg3/rose7.3.jpeg"],
+    no: "7 Rose Bouquet",
     description: "A bouquet of balance and beauty."
   },
   {
@@ -34,6 +35,7 @@ const products = [
     name: "Pretty Black Bouquet",
     price: "1900.00",
     images: ["/static/pkg4/black7.2.jpeg", "/static/pkg4/black7.1.jpeg", "/static/pkg4/black7.3.jpeg"],
+    no: "7 Rose Bouquet",
     description: "Elegant black bouquet with fresh roses."
   },
   // {
