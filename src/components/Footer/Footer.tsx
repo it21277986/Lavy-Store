@@ -53,7 +53,7 @@ function Footer() {
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[#858585]">
           <h1 className="text-center md:text-left">
-            © {new Date().getFullYear()} Lavy Store - All rights reserved. | Designed by <a href="https://lakmal-thathsara-portfolio.netlify.app/"><u>Lakmal Thathsara</u></a>
+            © {new Date().getFullYear()} Lavy Store - All rights reserved. | Developed by <a href="https://lakmal-thathsara-portfolio.netlify.app/"><u>Lakmal Thathsara</u></a>
           </h1>
           <div className="flex gap-4 mt-2 md:mt-0">
             <a href="#" className="hover:text-white">Privacy Policy</a>
