@@ -9,7 +9,7 @@ const products = [
   {
     id: 1,
     name: "Elysian Bloom",
-    price: "300.00",
+    price: "500.00",
     images: ["/static/pkg1/red1.jpeg", "/static/pkg1/white1.jpeg", "/static/pkg1/black1.jpeg"],
     no: "1 Rose Bouquet",
     description: "A simple yet graceful touch of love."
